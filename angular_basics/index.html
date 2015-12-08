@@ -3,7 +3,7 @@
 <head>
 	<title>Angular Basics</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Treehouse Tutorial">
+	<meta name="description" content="Angular Basics Treehouse Tutorial with Huston Hedinger">
 	<meta name="keywords" content="HTML, CSS, JavaScript, AngularJS">
 	<meta name="author" content="mple by Michael Williams">
 
@@ -11,7 +11,12 @@
 </head>
 <body ng-app="todoListApp"> <!-- tells Angular where to bootstrap the application found in app.js -->
 
+	<!-- custom directive -->
+	<hello-world></hello-world>
+	<div hello-world></div>
+
 	<script type="text/javascript" src="vendor/angular.js"></script>
 	<script type="text/javascript" src="scripts/app.js"></script>
+	<script type="text/javascript" src="scripts/hello-world.js"></script>
 </body>
 </html>
