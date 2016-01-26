@@ -1,5 +1,7 @@
-# networker
+# TeamTreehouse.com
 
-Networker is a secure, responsive web application for constructing private groups. The user group for this project will be a “mock family network”. The application will provide the opportunities to login into a secure environment, build a phone book, track user locations of residency,  observe analytics based on the user group profiles, communicate through project-based message system. The project-based message system will allow for the users to collaborate on specific goals and communicate through posts and uploads. 
+This is a repo of tracks and courses through [Treehouse](https://teamtreehouse.com/) with the help of [Code Oregon](https://teamtreehouse.com/code-oregon).
 
-The idea is to reach within your network for assistance before seeking assistance outside of your network. This strengthens the network and reduces the existence of weak links.
+Treehouse (officially Treehouse Island, Inc.) is an online interactive education platform that offers courses in web, mobile and business development. Its courses on web development and programming are aimed at beginners looking to start a new career, while its courses in business education and marketing teach students how to start and market a business in the technology industry.
+
+Source: [Wikipedia](https://en.wikipedia.org/wiki/Treehouse_(company))
