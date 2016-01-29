@@ -1,0 +1,17 @@
+cat 
+dog 
+kitten 
+puppy 
+house 
+home 
+storm 
+weather 
+public 
+domino 
+section 
+photo
+equal 
+exam
+walk 
+down 
+frog
