@@ -65,7 +65,7 @@ while True:
         final_answer = display_selected(selected, guess, shown)
         final_answer = final_answer.replace("_", "").replace(" ", "").strip()
         if len(final_answer) == len(selected):
-            print("\nYou nailed it! Nice job, you guessed '{}' in {} tries.".format(selected, len(guess_list)))
+            print("\nYou nailed it! Nice job. You guessed '{}' in {} tries.".format(selected, len(guess_list)))
             break
             
     else:
