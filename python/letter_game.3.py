@@ -2,27 +2,12 @@ import os
 import sys
 import random
 
-# initialize variables
-words = [
-    "cat", 
-    "dog", 
-    "kitten", 
-    "puppy", 
-    "house", 
-    "home", 
-    "storm", 
-    "weather", 
-    "public", 
-    "domino", 
-    "section", 
-    "photo", 
-    "equal", 
-    "exam", 
-    "walk", 
-    "down", 
-    "frog"
-]
-chances = 10
+# get external word list
+words = []
+with open("word_list.txt", "r") as filestream:
+    for line in filestream:
+        words.append(line.strip())
+print(words)
 
 # clear the screen for cleaner game experience
 def clear():
@@ -44,12 +29,13 @@ def display_selected(selected, guess, guess_list, correct_list, shown):
             shown += "_ "
     print("\nSelected letters: " + ", ".join(sorted(guess_list)))
     print('')
+    print(selected)
     print("Here is your word: {}({} letters total)".format(shown, len(selected)))
     print('')
     return shown
 
 # check if the letter is in the word, track hown many instances of the letter in the word
-def check(selected, guess, guess_list, correct_list, incorrect_list):
+def check(selected, guess, guess_list, correct_list, incorrect_list, chances):
     count = 0
     
     while True:
@@ -73,10 +59,12 @@ def play(done):
     guess = ""
     shown = ""
     selected = random.choice(words)
+    print(selected)
+    chances = len(selected * 2)
     
     while True:
         display_selected(selected, guess, guess_list, correct_list, shown)
-        guess = check(selected, guess, guess_list, correct_list, incorrect_list)
+        guess = check(selected, guess, guess_list, correct_list, incorrect_list, chances)
         
         if guess in selected:
             correct_list.append(guess)
